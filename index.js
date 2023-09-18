@@ -29,18 +29,17 @@ function initTable () {
     }
 
     for (let i = elements.length - 1; i >= 0; i--) {
+
         tasks.insertAdjacentHTML (
             'afterbegin',
             `<div class='container_element_element element-${i}' draggable='true'>${elements[i].title}</div>`
         );
-    }
 
-    const card = document.querySelectorAll('.container_element_element');
-    card.forEach( card => {
+        let card = document.querySelector('.container_element_element');
         card.addEventListener('dragstart', startDragging);
         card.addEventListener('dragend', endDragging);
-    });
-    
+    }
+
     areas.forEach( area => {
         area.addEventListener('dragover', dragOver);
         area.addEventListener('dragenter', dragEnter);
