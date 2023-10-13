@@ -7,12 +7,10 @@
 }
 
 .container_list {
-
     display: flex;
 }
 
 .container_element {
-
     display: flex;
 }
 
@@ -20,7 +18,6 @@
     width: 250px;
     height: 100vh;
 }
-
 
 .container_list_element {
     margin: 20px;
